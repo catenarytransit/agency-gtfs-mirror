@@ -26,6 +26,6 @@ jobs:
       - name: Download data & Update files
         run: |
           wget https://www.octa.net/current/google_transit.zip -O octa_gtfs.zip
-          wget https://rrgtfsfeeds.s3.amazonaws.com/gtfsmnr.zip
+          wget https://rrgtfsfeeds.s3.amazonaws.com/gtfsmnr.zip -O gtfsmnr.zip
 
       - uses: stefanzweifel/git-auto-commit-action@v5

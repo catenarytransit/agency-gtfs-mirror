@@ -27,5 +27,7 @@ jobs:
         run: |
           wget https://www.octa.net/current/google_transit.zip -O octa_gtfs.zip
           wget https://rrgtfsfeeds.s3.amazonaws.com/gtfsmnr.zip -O gtfsmnr.zip
+          chmod +x saskatoon.sh
+          ./saskatoon.sh saskatoon.zip
 
       - uses: stefanzweifel/git-auto-commit-action@v5
